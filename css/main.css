@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-size: 16px!important;
     font-weight: 300;
     line-height: 25px;
     color: #3b4045;
@@ -39,9 +39,8 @@ h4 {
   font-weight: 400;
 }
 p {
-    font-size: 16px;
     line-height: 25px;
-    margin: 0px;
+    margin: 15px 0;
 }
 /* ul {
     padding: 0;
@@ -70,7 +69,7 @@ a:active {
 }
 
 .section {
-    padding: 100px 0;
+    padding: 25px 0;
 }
 /*--
     custom heading
@@ -111,11 +110,6 @@ a:active {
 .sub-heading h4 {
     font-size: 25px;
     margin-bottom: 15px;
-}
-
-.sub-heading > p {
-    font-size: 14px;
-    color: #777;
 }
 
 .btn {    
@@ -521,11 +515,6 @@ a:active {
     sponsor start
 --*/
 
-#sponsor {
-    text-align: center;
-    background: #f9f9f9;
-}
-
 .sponsor {
     text-align: left;
 }
@@ -547,8 +536,8 @@ a:active {
     display: block;
     position: relative;
     text-align: center;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin:0 auto 15px;
 }
 
@@ -561,7 +550,12 @@ a:active {
 
 .sponsor .logo-box img {
     vertical-align: middle;
-    width: 150px;
+    width: 100%;
+}
+
+#organizers .sponsor .logo-box {
+    height: 250px;
+    width: 250px;
 }
 
 /*--
@@ -575,15 +569,7 @@ a:active {
   color: #7e7e7e;
   margin-top: 20px;
 }
-#about .heading p {
-    font-size: 18px;
-    color: #898989;
-}
-#about .block p {
-    font-size: 15px;
-    color: #7e7e7e;
-    line-height: 30px;
-}
+
 #about .block .bottom-text {
     padding-right: 20px;
 }
@@ -654,6 +640,15 @@ a:active {
     box-shadow: none;
     vertical-align: middle;
     margin: 0 10px;
+}
+
+#subscribe a {
+    color: #fff;
+    text-decoration: underline
+}
+
+#subscribe a:hover {
+    text-decoration: none
 }
 
 #contact {
@@ -783,4 +778,46 @@ footer p a:hover {
 #schedule .day {
     text-align: center;
     font-weight: bold
+}
+
+.expandable {
+    position: relative;
+    overflow: hidden;
+    height: 200px
+}
+
+.expandable .expand {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%) repeat scroll 0 0;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.expandable.expanded .expand {
+    background: none;
+}
+
+.expandable .expand:hover {
+    background: rgba(0, 0, 0, 0) linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.1) 25%,rgba(255,255,255,0) 100%) repeat scroll 0 0;
+}
+
+.expandable .expand .caret {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border-top: 8px dashed;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 0;
+}
+
+.expandable.expanded .caret {
+    border-bottom: 8px dashed;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 0;
 }
