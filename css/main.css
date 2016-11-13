@@ -759,6 +759,7 @@ footer p a:hover {
 
 #speakers .info {
     font-size: 14px;
+    line-height: 20px;
     text-align: center;
     height: 100px;
 }
@@ -766,7 +767,7 @@ footer p a:hover {
 #speakers .photo {
     width: 100px;
     height: 100px;
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
     border-radius: 50%;
     overflow:hidden;
     text-align: center;
