@@ -426,16 +426,16 @@ a:active {
 }
 
 /*--
-    sponsor start
+    partner start
 --*/
 
-.sponsor {
+.partner {
     text-align: left;
 }
-.sponsor .caption {
+.partner .caption {
     text-align: center;
 }
-.sponsor .caption h3 {
+.partner .caption h3 {
     margin: 0 0 10px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -444,7 +444,7 @@ a:active {
     text-transform: uppercase;
 }
 
-.sponsor .logo-box {
+.partner .logo-box {
     display: block;
     position: relative;
     text-align: center;
@@ -453,20 +453,20 @@ a:active {
     margin:0 auto 15px;
 }
 
-.sponsor .logo-box a:before {
+.partner .logo-box a:before {
     content: "";
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
 
-.sponsor .logo-box img {
+.partner .logo-box img {
     vertical-align: middle;
     max-width: 100%;
     max-height: 200px;
 }
 
-#organizers .sponsor .logo-box {
+#organizers .partner .logo-box {
     height: 250px;
     width: 250px;
 }
