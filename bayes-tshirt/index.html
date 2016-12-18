@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <script src="jquery-3.1.1.min.js"></script>
+        <style>
+            * {margin; 0; padding: 0}
+            #tshirt { width : 700px; position: relative }
+            #tshirt > img { max-width: 100% }
+
+            #tshirt #images { position: absolute; width: 34%; top: 20%; left: 33% }
+            #tshirt #images img { max-width: 50% }
+
+            #school-logo { position: absolute; bottom: 15%; width: 34%; left: 33%; display: none }
+
+            #selector { position: absolute; top: -500px; left: -500px; opacity: 0; width: 500px }
+            #selector img { max-width: 100px }
+        </style>
+    </head>
+    <body>
+        <div id="tshirt">
+            <img src="tshirt.jpg" />
+            <div id="images">
+                <img src="bayes_1.jpg" /><img src="bayes_15.jpg" /><img src="bayes_9.jpg" /><img src="bayes_5.jpg" /><img src="bayes_13.jpg" /><img src="bayes_17.jpg" />
+            </div>
+            <img src="../huge-logo.png" id="school-logo" />
+        </div>
+        <div id="selector"></div>
+        <pre id="layout"></pre>
+        <script>
+            function strip_name(path) {
+                var parts = path.split('/');
+                return parts[parts.length-1];
+            }
+
+            function update_layout() {
+                var cur_code = JSON.stringify( $('#images img').map(function () { return strip_name(this.src) }).toArray() );
+                $('#layout').html(cur_code);
+            }
+
+            var initial =["bayes_1.jpg","bayes_15.jpg","bayes_10.jpg","bayes_3.jpg","bayes_13.jpg","bayes_7.jpg"];
+            $('#images').html(initial.map(function(a){ return '<img src="' + a + '" title="' + a + '" />'; }).join(''));
+
+            var images_count = 19, html = '', selector = $('#selector'), selected = null;
+            for (var i = 1; i <= images_count; ++i) {
+                html += '<img src="bayes_' + i + '.jpg" />';
+            }
+            selector.append(html);
+            $(document).on('click', 'img', function(e) {
+                if (selected != this && $(this).is('#images img')) {
+                    selected = this;
+                    var y = e.clientY + 10, x = e.clientX + 10;
+                    selector.stop().animate({top : y, left: x, opacity: 1});
+                    return;
+                }
+                if ($(this).is('#selector img')) {
+                    if (selected) {
+                        selected.src = this.src;
+                        selected.title = strip_name(selected.src);
+                        update_layout();
+                    }
+                }
+                selector.stop().animate({opacity : 0});
+                selected = null;
+
+            });
+            update_layout();
+        </script>
+    </body>
+</html>
