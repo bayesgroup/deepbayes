@@ -515,15 +515,6 @@ a:active {
     margin: 0 10px;
 }
 
-#subscribe a {
-    color: #fff;
-    text-decoration: underline
-}
-
-#subscribe a:hover {
-    text-decoration: none
-}
-
 #contact {
 
 }
