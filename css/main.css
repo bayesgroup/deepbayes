@@ -649,6 +649,15 @@ footer p a:hover {
     width: 100px;
 }
 
+#speakers .speaker-name {
+    font-weight: 500;
+}
+
+#speakers .job-affiliation {
+    display: block;
+    opacity: 0.7;
+}
+
 #schedule .day {
     text-align: center;
     font-weight: bold
