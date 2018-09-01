@@ -734,3 +734,17 @@ footer p a:hover {
     border-bottom: 1px solid #eee;
     margin: 20px 0;
 }
+
+#materials {
+    padding: 70px 0px;
+    background: rgba(0, 0, 0, 0) linear-gradient(160deg, #4ec684 0%, #417fab 100%) repeat scroll 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-top: 1px solid #eee;
+    color: #fff;
+}
+
+#materials .heading {
+    padding: 0
+}
