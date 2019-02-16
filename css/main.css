@@ -519,7 +519,6 @@ a:active {
 }
 
 #apply .block a {
-    color: white;
     font-weight: 700;
 }
 
@@ -712,7 +711,7 @@ footer p a:hover {
     text-align: center;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     max-width: 300px;
-    margin: 50px auto 0;
+    margin: -50px auto 0;
 }
 
 #hero-area .organizer h5 {
