@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Deep|Bayes – Summer school on Deep Learning and Bayesian Methods</title>
+        <meta name="description" content="Summer school on Deep Learning and Bayesian Methods. Russia, Moscow, August 2019" />
+
+        <meta property="og:title" content="Summer School Deep|Bayes. Russia, Moscow, August 2019" />
+        <meta property="og:description" content="At the Deep|Bayes summer school, we will discuss how Bayesian Methods can be combined with Deep Learning and lead to better results in machine learning applications. Recent research has proven that the use of Bayesian approach can be beneficial in various ways. School participants will learn methods and techniques that are crucial for understanding current research in machine learning. They will also have hands-on experience with using probabilistic modeling to build neural generative and discriminative models, learn modern stochastic optimization methods and regularization techniques for neural networks, and master the ways to reason about the uncertainty about the weight of the neural networks and their predictions. Lectures will be followed by practical sessions." />
+        <meta property="og:image" content="http://deepbayes.ru/images/school-logo.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@deepbayes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+
+        <!-- Fonts -->
+        <!-- Lato -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/owl.carousel.css">
+        <link rel="stylesheet" href="../css/animate.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- Responsive Stylesheet -->
+        <link rel="stylesheet" href="../css/responsive.css">
+    </head>
+
+    <body id="body">
+
+        <div id="preloader">
+            <div class="book">
+              <div class="book__page"></div>
+              <div class="book__page"></div>
+              <div class="book__page"></div>
+            </div>
+        </div>
+
+        <!-- 
+        Header start
+        ==================== -->
+        <div class="navbar-default navbar-fixed-top" id="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">
+                        <!-- img class="logo-1" src="images/logo.png" alt="LOGO" height=50 -->
+                        <img class="logo-2" src="../images/logo-2.png" alt="LOGO" height=50>
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <nav class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right" id="top-nav">
+			            <li><a href="#attendees">Attendees</a></li>
+			            <li><a href="#venue">Venue</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+
+        <br/>
+        <br/><br/>
+
+        <!-- 
+        About start
+        ==================== -->
+        <section id="attendees" class="section">
+            <div class="container">
+                <div class="row">
+                        <h2>Attendees Information</h2>
+                    <div class="block">
+                        <p>During summer school, we will discuss quite advanced topics of Bayesian Deep Learning. The school lasts only 6 days, and we do not have enough time for a detailed introduction into basic Bayesian Methods and Deep Learning. That's why we expect you to come with the knowledge of some basic concepts. </p>
+                        <p>Below we present a checklist of concepts which you have to be familiar with <strong>before</strong> the summer school. We also provide links to the materials on these topics. We <strong>recommend studying</strong> the materials on concepts you are not familiar with. Otherwise, it will be hard for you to follow the school lectures.</p>
+                        <p>Although there are a few intro lectures on Bayesian approach in the program, they are not enough to understand the specifics of this approach if it is your first acquaintance. But they will be helpful to understand the connections between methods if you studied the materials in advance. </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="sub-heading">
+                        <h3>Checklist of basic concepts</h3>
+                    </div>
+                    <div class="block">
+                        <ol>
+                            <li>
+                                Bayesian Methods
+                                <ul>
+                                    <li>
+                                        Concepts
+                                        <ol>
+											<li>Bayesian reasoning v. s. frequentist reasoning</li>
+ 											<li>Conjugate priors and analytical Bayesian inference</li>
+ 											<li>EM-algorithm</li>
+ 											<li>Variational inference, mean-field approximation, and conditional conjugacy</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Materials
+                                        <ol>
+											<li>First 3 weeks of <a href="https://www.coursera.org/learn/bayesian-methods-in-machine-learning">Bayesian Methods for Machine Learning</a> Course on Coursera.</li>
+ 											<li>Or, if you prefer reading books, chapters 1, 2, 3, 9, 10 of <a href="https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/">Pattern Recognition and Machine Learning</a> by Christopher Bishop</li>
+ 											<li>Or, if you prefer concise lecture notes of university courses, we'd recommend <a href="http://www.columbia.edu/~jwp2128/Teaching/E6720/BayesianModelsMachineLearning2016.pdf">this course</a> or <a href="https://www.cse.wustl.edu/~garnett/cse515t/spring_2017/">this course</a>.</li>
+                                        </ol>
+                                    </li>
+									<li>To test your knowledge, try solving Bayesian methods problems in <a href="https://github.com/bayesgroup/deepbayes-2019/blob/master/homework.pdf">this document</a>.</li>
+                                </ul>
+                            </li>
+							<!-- ######### -->
+                            <li>
+                                Deep Learning
+                                <ul>
+                                    <li>
+                                        Concepts
+                                        <ol>
+											<li>Computational graphs, deep understanding of backpropagation, stochastic gradient descent</li>
+ 											<li>Fully-connected, convolutional, recurrent neural networks, their popular architectures (AlexNet, VGG, ResNet, LSTM)</li>
+ 											<li>Regularization in deep learning: weight decay, dropout, batch normalization</li>
+ 											<li>Generative adversarial networks</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Materials
+                                        <ol>
+											<li>Lectures 3-11 of <a href="http://cs231n.stanford.edu/">Stanford's CS231n: Convolutional Neural Networks for Visual Recognition</a> (see <a href="http://cs231n.stanford.edu/syllabus.html">Syllabus</a> with materials and Videos)</li>
+ 											<li>Or, if you prefer reading books, Chapters 6-10 and 20.10.4 of <a href="http://www.deeplearningbook.org/">Deep Learning Book</a></li>
+ 											<li>Or first 4 videos from <a href="http://introtodeeplearning.com/index.html">Introduction to Deep Learning</a> by MIT.</li>
+                                        </ol>
+                                    </li>
+									<li>To test your knowledge, try solving Deep Learning problems in <a href="https://github.com/bayesgroup/deepbayes-2019/blob/master/homework.pdf">this document</a>.</li>
+                                </ul>
+                            </li>
+							<!-- ######### -->
+                            <li>
+                                PyTorch
+                                <ul>
+                                    <li>
+                                        Concepts
+                                        <ol>
+											<li>Tensors, autograd and implementing custom algorithms using basic operations</li>
+ 											<li>nn.Module and how it helps to implement any computational graph</li>
+ 											<li>Constructing and training neural networks</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Materials
+                                        <ol>
+											<li>Parts of an official PyTorch tutorial: <a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html">Quick 60-min intro</a>, <a href="https://pytorch.org/tutorials/beginner/pytorch_with_examples.html">Learning PyTorch with examples</a>, <a href="https://pytorch.org/tutorials/beginner/nn_tutorial.html">What is torch.nn really?</a></li>
+ 											<li>Or, if you prefer tutorials in Jupiter notebooks where you write missing code, we suggest solving Part Q5 (PyTorch version) of <a href="http://cs231n.github.io/assignments2019/assignment2/">Stanford's assignment</a>.</li>
+                                        </ol>
+                                    </li>
+									<li>To test your knowledge, try implementing Multi-layer perceptron on the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html">Boston dataset</a> yourself in low-level PyTorch using nn.Module, basic mathematical operations (like matrix multiplication or random tensor initialization) and autograd.</li>
+                                </ul>
+                            </li>
+                        </ol>
+
+						<p>We also recommend taking a look at a the <a href="https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf">Matrix Cookbook</a>. It is a good collection of useful mathematical facts that will be useful at the summer school. You should understand basic concepts from this book (basic operations with matrices, matrix derivatives, properties of distributions etc).</p>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- #about close -->
+
+        <!-- 
+        Tourist info start
+        ==================== -->
+        <section id="tourist-info" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="heading">
+                        <h2>Tourist information</h2>
+                    </div>
+
+                    <div class="sub-heading">
+                        <h3>Recommended hotels</h3>
+                    </div>
+                    <div class="block">
+                        <ul>
+                            <li><a href="https://www.booking.com/hotel/ru/red-brick-presnya.en-gb.html?aid=304142;label=gen173nr-1DCAEoggI46AdIM1gEaMIBiAEBmAEJuAEHyAEM2AED6AEBiAIBqAIDuAKygYroBcACAQ;sid=c90594a64a9263afd44280ba18f5a2f0;atlas_src=sr_iw_btn;checkin=2019-08-19;checkout=2019-08-26;dist=0;group_adults=1;group_children=0;highlighted_blocks=350469703_117674685_2_2_0;nflt=ht_id%3D204%3B;no_rooms=1;room1=A;sb_price_type=total;type=total;ucfs=1&#map_closed">Red Brick Hotel Presnya</a> (Ulitsa Rodchelskaya 15 building 22)</li>
+                            <li><a href="https://www.booking.com/hotel/ru/rombix-lounge.en-gb.html?aid=304142;label=gen173nr-1DCAEoggI46AdIM1gEaMIBiAEBmAEJuAEHyAEM2AED6AEBiAIBqAIDuAKygYroBcACAQ;sid=c90594a64a9263afd44280ba18f5a2f0;atlas_src=sr_iw_btn;checkin=2019-08-19;checkout=2019-08-26;dist=0;group_adults=1;group_children=0;highlighted_blocks=325858401_114936641_1_42_0;nflt=ht_id%3D204%3B;no_rooms=1;room1=A;sb_price_type=total;type=total;ucfs=1&">Winewood Moscow Lounge Hotel</a> (Ulitsa Krasnaya Presnya 30 building 3)</li>
+                            <li><a href="https://www.booking.com/hotel/ru/chez-michel.en-gb.html?aid=304142;label=gen173nr-1DCAEoggI46AdIM1gEaMIBiAEBmAEJuAEHyAEM2AED6AEBiAIBqAIDuAKygYroBcACAQ;sid=c90594a64a9263afd44280ba18f5a2f0;atlas_src=sr_iw_btn;checkin=2019-08-19;checkout=2019-08-26;dist=0;group_adults=1;group_children=0;highlighted_blocks=475967605_149074397_1_2_0;nflt=ht_id%3D204%3B;no_rooms=1;room1=A;sb_price_type=total;type=total;ucfs=1&#map_closed">Chez Michel Hotel</a> (13 Krasnaya Presnya Street, 5 floor)</li>
+                            <li><a href="https://www.booking.com/hotel/ru/mini-ghostinitsa-brusnika-poliezhaievskaia.en-gb.html?aid=304142;label=gen173nr-1DCAEoggI46AdIM1gEaMIBiAEBmAEJuAEHyAEM2AED6AEBiAIBqAIDuAKygYroBcACAQ;sid=c90594a64a9263afd44280ba18f5a2f0;atlas_src=sr_iw_btn;checkin=2019-08-19;checkout=2019-08-26;dist=0;group_adults=1;group_children=0;highlighted_blocks=196264901_122102595_1_0_0;nflt=ht_id%3D204%3B;no_rooms=1;room1=A;sb_price_type=total;type=total;ucfs=1&">MiniHotel Brusnika na Khoroshevskom</a> (Khoroshevskoye Shosse, 23/2)</li>
+                        </ul>
+                    </div>
+
+                    <div class="sub-heading">
+                        <h3>Recommended hostels</h3>
+                    </div>
+                    <div class="block">
+                        <ul>
+                            <li><a href="https://www.booking.com/hotel/ru/rassvet-moskva.en-gb.html?aid=304142;label=gen173nr-1DCAEoggI46AdIM1gEaMIBiAEBmAEJuAEHyAEM2AED6AEBiAIBqAIDuAKygYroBcACAQ;sid=c90594a64a9263afd44280ba18f5a2f0;atlas_src=sr_iw_btn;checkin=2019-08-19;checkout=2019-08-26;dist=0;highlighted_blocks=358339106_121049449_1_0_0;nflt=ht_id%3D203%3B;room1=A;sb_price_type=total;type=total;ucfs=1&">Rassvet Hostel</a> (Krasnaya Presnya 32-34 Stroyeniye 3)</li>
+                            <li><a href="https://www.booking.com/hotel/ru/themakarov-hostel.en-gb.html?aid=304142;label=gen173nr-1DCAEoggI46AdIM1gEaMIBiAEBmAEJuAEHyAEM2AED6AEBiAIBqAIDuAKygYroBcACAQ;sid=c90594a64a9263afd44280ba18f5a2f0;atlas_src=sr_iw_btn;checkin=2019-08-19;checkout=2019-08-26;dist=0;highlighted_blocks=380738901_122191662_1_0_0;nflt=ht_id%3D203%3B;room1=A;sb_price_type=total;type=total;ucfs=1&">GetCapsule Hostel</a> (Bol'shoy Tishinskiy pereulok, dom 8 apartment 1)</li>
+                        </ul>
+                    </div>
+
+                    <div class="sub-heading">
+                        <h3>Resources for navigation and sightseeing</h3>
+                    </div>
+                    <div class="block">
+                        <ul>
+                            <li>maps: <a href="https://yandex.com/maps/"maps.yandex.com</a> (online app available, includes online transport monitoring), <a href="https://2gis.ru/moscow">2gis.ru</a> (offline app available), <a href="https://www.google.com/maps">maps.google.com</a></li>
+                            <li><a href="https://metro.yandex.com/moscow">interactive metro map</a> (offline app available)</li>
+                            <li>taxi (with apps): Uber, <a href="http://taxi.yandex.ru/">taxi.yandex.ru</a>, Gett</li>
+                            <li>getting from and to airports: <a href="https://aeroexpress.ru/en/aero/toMoscow.html">Aeroexpress</a></li>
+                            <li>sightseeing: <a href="https://www.tripadvisor.co.uk/Attractions-g298484-Activities-Moscow_Central_Russia.html">Trip Advisor</a>, <a href="https://city-sightseeing.com/en/104/moscow/117/hop-on-hop-off-moscow">Hop on Hop off Moscow</a></li>
+                            <li>accommodation: booking.com, Airbnb</li>
+                        </ul>
+                    </div>
+
+                    <div class="sub-heading">
+                        <h3>Other info</h3>
+                    </div>
+                    <div class="block">
+                        <ul>
+                            <li>Bank cards are accepted almost everywhere, including public transport</li>
+                            <li>To get from the airport, you can use Aeroexpress, taxi (see above) or bus. When called using a mobile app, the taxi may cost not much more than Aeroexpress. The bus goes to the nearest metro station, and it is the cheapest option.</li>
+                            <li>To get cheaper tickets for public transport, buy Troika card. Find more information about tickets <a href="http://news.metro.ru/useeng.html">here</a>.</li>
+                            <li>Do not forget to purchase travel insurance.</li>
+                            <li>Mobile data plans are very cheap in Russia compared to the rest of the world. If you'd like to get yourself a local SIM card, <a href="https://prepaid-data-sim-card.fandom.com/wiki/Russia">this guide</a> might be useful.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section><!-- #about close -->
+
+        <!-- 
+        Venue start
+        ==================== -->
+        <section id="venue" class="section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="heading">
+                        <h2>Venue</h2>
+                    </div>
+                    <div class="block">
+                        <p>The School will be held at the InLiberty space at <a href="https://yandex.com/maps/213/moscow/?ll=37.568813%2C55.763357&mode=search&oid=219665386921&ol=biz&where=37.569135%2C55.763234&z=18.7" target="_blank">Stolyarnyy Pereulok, 3/1, Moscow</a> near the metro station "Ulitsa 1905 goda" (Purple line)</p>
+                        <p><a href="https://yandex.com/maps/213/moscow/?ll=37.568813%2C55.763357&mode=search&oid=219665386921&ol=biz&where=37.569135%2C55.763234&z=18.7"><img src="../images/map.png" style="width:800px; max-width:100%" /></a></p>
+                    </div>
+                </div>
+            </div><!-- .container close -->
+</section><!-- #venue close -->
+
+        <!-- 
+        Contacts start
+        ==================== -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="heading">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="block">
+                        <p>If you have any further questions about our summer school, feel free to send us an email to <a href="mailto:info@deepbayes.ru">info@deepbayes.ru</a>.</p>
+                        <p>You can also follow us on <a href="https://twitter.com/deepbayes" target="_blank">Twitter</a>.</p>
+                    </div>
+                </div>
+            </div><!-- .container close -->
+        </section><!-- #contacts close -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <p>Copyright &copy; <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>| All right reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Js -->
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/jquery-1.10.2.min.js"></script>
+        <!-- script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script -->
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.nav.js"></script>
+        <script src="../js/jquery.sticky.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/wow.min.js"></script>
+        <script src="../js/main.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87288650-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter40840914 = new Ya.Metrika({
+                    id:40840914,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/40840914" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+    </body>
+</html>
